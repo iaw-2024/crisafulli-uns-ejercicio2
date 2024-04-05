@@ -1,6 +1,7 @@
 // Función para cargar el JSON y generar la tabla
 function cargarJSONYGenerarTabla() {
-    fetch('/datos') // Asegúrate de que la ruta al archivo JSON es correcta
+    //fetch('/datos') // Asegúrate de que la ruta al archivo JSON es correcta
+    fetch('/cliente_servidor/datos.json')
       .then(response => response.json())
       .then(usuarios => {
         const contenedor = document.getElementById('tablaUsuarios');
