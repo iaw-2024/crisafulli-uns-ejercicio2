@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const expressApp = require("../public/express/express.js" ); // Importar la aplicación Express configurada en express.js
+const expressApp = require("../src/express.js" ); // Importar la aplicación Express configurada en express.js
 app.use(expressApp);
 
 //app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
