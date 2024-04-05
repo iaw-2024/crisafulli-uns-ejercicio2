@@ -44,7 +44,7 @@ const datos = [  {
 
     
     // Leer el archivo index.html y agregar la tabla
-    fs.readFile("/public/express/index.html", "utf8", (err, html) => {
+    fs.readFile("public/express/index.html", "utf8", (err, html) => {
         if (err) {
             console.error("Error al leer el archivo index.html:", err);
             res.status(500).send("Error interno del servidor");
