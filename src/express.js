@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express();
 module.exports = app;
+const path = require('path');
+
 
 const datos = [  {
     "email": "usuario1@example.com",
@@ -44,10 +46,10 @@ const datos = [  {
 
     
     // Leer el archivo index.html y agregar la tabla
-    fs.readFile("public/archivos-express/index.html", "utf8", (err, html) => {
+    fs.readFile(path.resolve(__dirname, '../public/archivos-express/index.html'), "utf8", (err, html) => {
         if (err) {
             console.error("Error al leer el archivo index.html:", err);
-            res.status(500).send("Error interno del servidor");
+            res.status(500).send("Error interno del servidor", err);
             return;
         }
 
