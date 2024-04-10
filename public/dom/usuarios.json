@@ -1,0 +1,17 @@
+[
+  {
+    "email": "usuario1@example.com",
+    "contrasena": "contrasena123",
+    "genero": "Femenino"
+  },
+  {
+    "email": "usuario2@example.com",
+    "contrasena": "contrasena456",
+    "genero": "Masculino"
+  },
+  {
+    "email": "usuario3@example.com",
+    "contrasena": "contrasena789",
+    "genero": "No especificado"
+  }
+]
